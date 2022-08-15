@@ -42,11 +42,11 @@ The dataset taken from [link](https://www.eia.gov/consumption/residential/data/2
 The features contributing the most towards the prediction of the electricity consumption is obtained with several steps of data cleaning, processing and feature engineering. <br>
 Random Forest Regressor is giving fair output with R2 score of 0.875. With more data exploration and manipulation, more optimised prediction can be obtained.
 
-## Further Tasks <br>
+### Further Tasks <br>
 Other models such as Neural Networks can be used for the prediction. <br>
 The features can be dugged deep with more EDA and by using libraries such as FeatureSelector to further improve the model and working more on feature importance.
 
-## References <br>
+### References <br>
 *  https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0
 *   https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/
 *   https://www.youtube.com/watch?v=ioXKxulmwVQ&t=0s

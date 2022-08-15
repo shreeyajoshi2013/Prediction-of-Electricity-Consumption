@@ -9,6 +9,9 @@ The dataset taken from [link](https://www.eia.gov/consumption/residential/data/2
 
 * Google Colab
 
+### Highlights
+* Random Forest Regressor <br>
+
 ### Libraries used 
 * Pandas
 * Numpy
@@ -16,29 +19,37 @@ The dataset taken from [link](https://www.eia.gov/consumption/residential/data/2
 * Seaborn
 * Scikit-learn <br>
 
-### Highlights
-* Random Forest Regressor <br>
-
 
 ### What is being done?
 
 1.   Data understanding <br>
-    *  Data exploration  <br>
+      * Data exploration
 2.   Data preparation <br>
-    *  One-Hot Encoding the categorical columns <br>
-    *  Handling NaN values <br>
-    *  Removing the unneacesary columns <br>
-       *  Assumptions and considerations: <br>
-            *   Columns starting with 'Z' are the imputation flags for other variables. So are to be removed as they will not contrubute in the prediction.<br>
-            *   Columns with thermal unit other than KWH are assumend to be not helpful. Hence are removed. <br>
-            *   Columns which show the total consumptions of elements' electricity usage are redundant as the individual contributions by those elements are already present in the data. Hence are removed for avoiding data redundancy. <br>
+      *  One-Hot Encoding the categorical columns <br>
+      *  Handling NaN values <br>
+      *  Removing the unneacesary columns <br>
+      *  Assumptions and considerations: <br>
+      *   Columns starting with 'Z' are the imputation flags for other variables. So are to be removed as they will not contrubute in the prediction.<br>
+      *   Columns with thermal unit other than KWH are assumend to be not helpful. Hence are removed. <br>
+      *   Columns which show the total consumptions of elements' electricity usage are redundant as the individual contributions by those elements are already present in the data. Hence are removed for avoiding data redundancy. <br>
 3.   Data Analysis <br>
-    * Finding the correlation of features with output variable and visualizing <br>
+      * Finding the correlation of features with output variable and visualizing <br>
 4.   Random Forest Regressor <br>
-    *  Using GridSearchCV for selecting optimal hyperparameters for the model <br>
-    *  Choosing important features by calculating feature importances <br>
+      *  Using GridSearchCV for selecting optimal hyperparameters for the model <br>
+      *  Choosing important features by calculating feature importances <br>
 
 ## Conclusion <br>
+The features contributing the most towards the prediction of the electricity consumption is obtained with several steps of data cleaning, processing and feature engineering. <br>
+Random Forest Regressor is giving fair output with R2 score of 0.875. With more data exploration and manipulation, more optimised prediction can be obtained.
 
-##Further Tasks <br>
-##References <br>
+## Further Tasks <br>
+Other models such as Neural Networks can be used for the prediction. <br>
+The features can be dugged deep with more EDA and by using libraries such as FeatureSelector to further improve the model and working more on feature importance.
+
+## References <br>
+*  https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0
+*   https://machinelearningmastery.com/feature-selection-with-real-and-categorical-data/
+*   https://www.youtube.com/watch?v=ioXKxulmwVQ&t=0s
+*   https://towardsdatascience.com/a-feature-selection-tool-for-machine-learning-in-python-b64dd23710f0
+*   https://machinelearninghd.com/gridsearchcv-hyperparameter-tuning-sckit-learn-regression-classification/
+*  https://towardsdatascience.com/improving-random-forest-in-python-part-1-893916666cd

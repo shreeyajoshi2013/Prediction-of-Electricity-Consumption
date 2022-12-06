@@ -2,7 +2,9 @@
 
 Goal of this project is building a data model that predicts electricity consumption, located in the KWH field in the dataset.
 This dataset contains information of energy costs and usage for heating, cooling, appliances and other end uses, from a sample of housing units. <br>
-The dataset taken from [link](https://www.eia.gov/consumption/residential/data/2009/index.php?view=mic).
+The dataset taken from [link](https://www.eia.gov/consumption/residential/data/2009/index.php?view=mic). <br>
+(Number of Rows: approx. 12000, <br>
+Number of Columns: approx. 940)
 
 ### Built with
 
